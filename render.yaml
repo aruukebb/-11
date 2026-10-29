@@ -1,0 +1,10 @@
+# Необязательный файл: описание сервиса для Render (Blueprint).
+# Если создаёте сервис вручную через панель Render, он не нужен.
+services:
+  - type: web
+    name: ala-too-inn
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health

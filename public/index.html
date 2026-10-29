@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ала-Тоо Inn</title>
+<meta name="description" content="Гостиница Ала-Тоо Inn в предгорьях Тянь-Шаня: номера с видом на хребет, туры в горы, конференц-зал на 80 человек, бронирование онлайн.">
+<meta name="theme-color" content="#EEF3F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1822" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 22'%3E%3Cpath d='M0 22 L10 4 L15 12 L20 2 L30 22 Z' fill='%232B6879'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gSnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--snow)"/>
+      <stop offset=".2" style="stop-color:var(--snow)"/>
+      <stop offset=".4" style="stop-color:var(--far)"/>
+      <stop offset="1" style="stop-color:var(--far)"/>
+    </linearGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:var(--sky1)"/>
+      <stop offset="1" style="stop-color:var(--sky2)"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ала-Тоо Inn, наверх">
+      <svg viewBox="0 0 30 22" aria-hidden="true"><path d="M0 22 L10 4 L15 12 L20 2 L30 22 Z" style="fill:var(--glacier)"/><path d="M20 2 L23.4 8.2 L20 6.4 L17.6 8 Z" style="fill:var(--bg)"/><path d="M10 4 L12.4 8.4 L10 7.2 L7.8 8.6 Z" style="fill:var(--bg)"/></svg>
+      Ала-Тоо Inn
+    </a>
+    <nav aria-label="Разделы сайта">
+      <a href="#rooms">Номера</a>
+      <a href="#booking">Бронирование</a>
+      <a href="#tours">Туры</a>
+      <a href="#conference">Конференц-зал</a>
+      <a href="#news">Новости</a>
+      <a href="#awards">Достижения</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn small" href="#booking">Забронировать</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="orb" data-speed=".25" aria-hidden="true"></div>
+  <div class="layers" aria-hidden="true">
+    <svg data-cfg="hf" data-speed=".38" preserveAspectRatio="none"><path/></svg>
+    <svg data-cfg="hm" data-speed=".22" preserveAspectRatio="none"><path/></svg>
+    <svg data-cfg="hn" data-speed=".1" preserveAspectRatio="none"><path/></svg>
+    <svg data-cfg="hfr" data-speed="0" preserveAspectRatio="none"><path/></svg>
+  </div>
+  <div class="wrap">
+    <div class="hero-in">
+      <h1><span>Тянь-Шань · 1 850 м над уровнем моря</span>Ала-Тоо Inn</h1>
+      <p class="lead">Гостиница в предгорьях: номера с видом на хребет, туры по ущельям и конференц-зал на 80 человек.</p>
+      <div class="actions">
+        <a class="btn" href="#booking">Выбрать даты</a>
+        <a class="btn ghost" href="#rooms">Смотреть номера</a>
+      </div>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><strong>24 номера</strong><span>четыре категории</span></div>
+      <div class="fact"><strong>80 мест</strong><span>конференц-зал, 120 м²</span></div>
+      <div class="fact"><strong>1–2 дня</strong><span>туры по ущельям</span></div>
+      <div class="fact"><strong>14:00 / 12:00</strong><span>заезд и выезд</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="rooms">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Номера</span>
+      <h2>Четыре категории, из каждого окна виден хребет</h2>
+      <p>Цена указана за номер в сутки в межсезонье. Зимой, летом и на праздники действуют сезонные коэффициенты, форма бронирования считает их сама.</p>
+    </div>
+    <div class="rooms" id="roomsGrid"></div>
+    <p class="note">В стоимость входят постельное бельё, полотенца, Wi‑Fi и парковка. Завтрак заказывается отдельно при бронировании.</p>
+  </div>
+</section>
+
+<section class="sec alt" id="booking">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Бронирование</span>
+      <h2>Выберите даты и узнайте стоимость сразу</h2>
+      <p>Расчёт обновляется при каждом изменении. Заявка уходит администратору, он перезвонит и подтвердит бронь.</p>
+    </div>
+    <div class="book">
+      <form class="card" id="bookForm" novalidate>
+        <fieldset class="group">
+          <legend class="label">Даты и гости</legend>
+          <div class="row">
+            <label class="field"><span>Заезд</span><input type="date" id="checkin" required></label>
+            <label class="field"><span>Выезд</span><input type="date" id="checkout" required></label>
+          </div>
+          <div class="row">
+            <label class="field"><span>Взрослые</span><input type="number" id="adults" min="1" max="8" value="2"></label>
+            <label class="field"><span>Дети до 12 лет</span><input type="number" id="children" min="0" max="6" value="0"></label>
+            <label class="field"><span>Номеров</span><input type="number" id="rooms" min="1" max="4" value="1"></label>
+          </div>
+          <p class="err" id="dateErr" role="alert" hidden></p>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend class="label">Номер</legend>
+          <label class="field"><span>Категория</span><select id="room"></select></label>
+          <p class="warn" id="capNote" hidden></p>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend class="label">Дополнительно</legend>
+          <label class="check"><input type="checkbox" id="breakfast"><b>Завтрак</b><em>650 сом / взр., 325 / ребёнок</em></label>
+          <label class="field"><span>Трансфер из аэропорта</span>
+            <select id="transfer">
+              <option value="0">Не нужен</option>
+              <option value="1">В одну сторону, до 4 гостей (3 000 сом)</option>
+              <option value="2">Туда и обратно, до 4 гостей (5 500 сом)</option>
+            </select>
+          </label>
+          <label class="field"><span>Тур в горы</span><select id="tour"></select></label>
+          <div class="row">
+            <label class="field"><span>Конференц-зал</span>
+              <select id="confType">
+                <option value="0">Не нужен</option>
+                <option value="half">Полдня, до 5 часов (12 000 сом)</option>
+                <option value="full">Целый день, до 10 часов (22 000 сом)</option>
+              </select>
+            </label>
+            <label class="field" id="confDaysWrap" hidden><span>Дней аренды</span><input type="number" id="confDays" min="1" max="5" value="1"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <legend class="label">Контакты</legend>
+          <div class="row">
+            <label class="field"><span>Имя</span><input type="text" id="name" autocomplete="name"></label>
+            <label class="field"><span>Телефон</span><input type="tel" id="phone" autocomplete="tel" placeholder="+996 ..."></label>
+          </div>
+          <label class="field"><span>Пожелания</span><textarea id="comment" placeholder="Время приезда, детская кроватка, диета"></textarea></label>
+          <p class="err" id="formErr" role="alert" hidden></p>
+          <div><button class="btn" type="submit" id="submitBtn">Отправить заявку</button></div>
+          <p class="hint" id="sendHint" hidden>Если сайт давно не открывали, ответ может занять до минуты.</p>
+        </fieldset>
+      </form>
+
+      <aside class="summary" aria-live="polite">
+        <h3>Расчёт стоимости</h3>
+        <p class="stay" id="stay"></p>
+        <div class="lines" id="sumLines"></div>
+        <div class="total"><span>Предварительно</span><b id="sumTotal">0&nbsp;сом</b></div>
+        <p class="hint">Окончательную сумму подтверждает администратор. Оплата при заезде.</p>
+        <div class="result" id="result" hidden>
+          <b id="resultTitle"></b>
+          <p class="hint" id="resultHint"></p>
+          <textarea id="resultText" readonly aria-label="Текст заявки"></textarea>
+          <div><button class="btn small" type="button" id="copyReq">Скопировать заявку</button></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="tours">
+  <div class="layers" aria-hidden="true">
+    <svg data-cfg="bf" data-speed=".1" preserveAspectRatio="none"><path/></svg>
+    <svg data-cfg="bn" data-speed=".18" preserveAspectRatio="none"><path/></svg>
+    <svg data-cfg="bfr" data-speed="0" preserveAspectRatio="none"><path/></svg>
+  </div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Туры в горы</span>
+      <h2>Маршруты от прогулки до ночёвки в юрте</h2>
+      <p>Выезд от гостиницы утром. Проводник, страховка и обед входят в цену. Профиль показывает перепад высот на маршруте.</p>
+    </div>
+    <div class="tours" id="toursGrid"></div>
+  </div>
+</section>
+
+<section class="sec" id="conference">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Конференц-зал</span>
+      <h2>Зал на 80 человек с окнами на хребет</h2>
+      <p>Для тренингов, стратегических сессий и семинаров. Участники живут в гостинице, переговоры идут без дороги.</p>
+    </div>
+    <div class="conf">
+      <div class="conf-col">
+        <div class="specs">
+          <div><strong>120 м²</strong><span>площадь зала</span></div>
+          <div><strong>80</strong><span>мест в театре</span></div>
+          <div><strong>3,2 м</strong><span>высота потолка</span></div>
+        </div>
+        <ul class="eq">
+          <li>Проектор и экран 3 м</li>
+          <li>Звук и два микрофона</li>
+          <li>Флипчарт и маркерная доска</li>
+          <li>Wi‑Fi для всего зала</li>
+          <li>Кофе-брейк в фойе</li>
+          <li>Тихая зона для звонков</li>
+        </ul>
+        <div class="tariffs">
+          <div><span>Полдня, до 5 часов</span><b>12 000 сом</b></div>
+          <div><span>Целый день, до 10 часов</span><b>22 000 сом</b></div>
+          <div><span>Кофе-брейк</span><b>450 сом / чел.</b></div>
+        </div>
+        <div><button class="btn" type="button" id="confBtn">Добавить в бронь</button></div>
+      </div>
+      <div class="seat" aria-label="Вместимость по рассадке">
+        <h3>Вместимость по рассадке</h3>
+        <div id="seatRows" class="seat"></div>
+        <p class="hint">Рассадку можно менять в течение дня, перестановка занимает около 30 минут.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Новости</span>
+      <h2>Сезонные предложения и экскурсии</h2>
+    </div>
+    <div class="tabs" role="group" aria-label="Фильтр новостей">
+      <button class="tab" type="button" data-f="all" aria-pressed="true">Все</button>
+      <button class="tab" type="button" data-f="offer" aria-pressed="false">Предложения</button>
+      <button class="tab" type="button" data-f="tour" aria-pressed="false">Экскурсии</button>
+    </div>
+    <div class="news" id="newsGrid"></div>
+  </div>
+</section>
+
+<section class="sec" id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Достижения</span>
+      <h2>Что о нас пишут гости на сервисах бронирования</h2>
+    </div>
+    <div class="awards">
+      <div class="rate" id="rateRows"></div>
+      <div class="miles">
+        <div><strong>с 2012</strong><span>принимаем гостей у подножия хребта</span></div>
+        <div><strong>38 000+</strong><span>гостей остановились у нас</span></div>
+        <div><strong>140</strong><span>конференций и выездных сессий за год</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contacts">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h3>Ала-Тоо Inn</h3>
+        <p>Гостиница в предгорьях Тянь-Шаня. Номера, туры в горы и конференц-зал.</p>
+      </div>
+      <div>
+        <h3>Связаться</h3>
+        <ul>
+          <li class="copyrow"><b id="ph">+996 312 00-00-00</b><button class="copy" type="button" data-copy="ph">копировать</button></li>
+          <li class="copyrow"><b id="em">info@ala-too-inn.example</b><button class="copy" type="button" data-copy="em">копировать</button></li>
+          <li>Ресепшн работает круглосуточно</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Заезд и выезд</h3>
+        <ul>
+          <li>Заезд с <b>14:00</b></li>
+          <li>Выезд до <b>12:00</b></li>
+          <li>Ранний заезд и поздний выезд по запросу</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Гостиница «Ала-Тоо Inn»</p>
+  </div>
+</footer>
+
+<script src="/js/pricing.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

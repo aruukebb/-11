@@ -1,0 +1,17 @@
+{
+  "name": "ala-too-inn",
+  "version": "1.0.0",
+  "description": "Сайт гостиницы «Ала-Тоо Inn»: номера, бронирование, туры, конференц-зал",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "geoip-lite": "^1.4.10"
+  }
+}
